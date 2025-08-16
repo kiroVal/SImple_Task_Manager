@@ -95,5 +95,30 @@ for i in range(1, j+1):
   if s == ' ':
     break
   f1.close()
+
+def task_update(username):
+    username = username+" TASK.txt"
+    print("Please enter which task is completed: ")
     
+    task_completed = input()
+    print("Enter the task that has not been started yet: ")
+    
+    task_not_started = input() 
+    print("Enter on going task: ")
+    
+    task_ongoing = input() 
+    fw = open(username, 'a')
+    DT = str(datetime.datetime.now())
+    
+    fw.write(DT)
+    fw.write("\n")
+    fw.write("Completed Task \n")
+    fw.write(task_completed)
+    fw.write("\n")
+    fw.write("Ongoing Task \n")
+    fw.write(task_ongoing)
+    fw.write("\n")
+    fw.write("Task has not yet been started \n")
+    fw.write(task_not_started)
+    fw.write("\n")
 
