@@ -5,7 +5,7 @@ def user_information(Ussnm, Passwd):
   name = input("Enter your name: ")
   address = input("Enter your address: ")
   age = input("Enter your age: ")
-  Ussm_ = Ussnm+" task.txt"
+  Ussm_ = Ussnm+" Task.txt"
 
 f = open(Ussnm_, 'a')
 f.write(Psswd)
@@ -35,7 +35,7 @@ def login():
   # password as entered while logging in
   pass_wr = (input("Enter password: "))+'\n'
   try:
-    usernm = user_nm+" task.txt"
+    usernm = user_nm+" Task.txt"
     f_ = open(usernm, 'r')
 
     # variable 'k' contains the password as saved
@@ -97,7 +97,7 @@ for i in range(1, j+1):
   f1.close()
 
 def task_update(username):
-    username = username+" TASK.txt"
+    username = username+" Task.txt"
     print("Please enter which task is completed: ")
     
     task_completed = input()
@@ -121,4 +121,11 @@ def task_update(username):
     fw.write("Task has not yet been started \n")
     fw.write(task_not_started)
     fw.write("\n")
+
+def task_update_viewer(username):
+    Ussnm = username+" Task.txt" 
+    o = open(Ussnm, 'r')
+    print(o.read())
+    o.close()
+
 
