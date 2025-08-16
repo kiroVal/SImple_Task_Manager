@@ -44,4 +44,27 @@ def login():
     k = f_.readlines(0)[0]
     f_.close()
 
+    # checking if the password entered is the same as the password saved while sigining in
+    if pssd_wr == k:
+      print("1--To view your data \n2--To add tasks \n3--Update task \n4--View task status")
+      a = input()
+      if a == '1':
+        view_data(usernm)
+      elif a == '2':
+        # add tasks
+        task_information(usernm)
+      elif a == '3':
+        tasks_update(usernm)
+      elif a == '4':
+        task_update_viewer(usernm)
+      else:
+        print("Wrong input, Please try again.")
+    else:
+      print("The password or username you entered is incorrect. Please try again.")
+      login()
+
+    except Exception as e:
+      print(e)
+      login()
+    
     
