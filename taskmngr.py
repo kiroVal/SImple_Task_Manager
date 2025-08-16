@@ -28,3 +28,20 @@ def signup():
   print("Proceed to login")
   login()
 
+def login():
+  print("Please enter your username: ")
+  usr_nm = input("Enter here: ")
+  
+  # password as entered while logging in
+  pass_wr = (input("Enter password: "))+'\n'
+  try:
+    usernm = user_nm+" task.txt"
+    f_ = open(usernm, 'r')
+
+    # variable 'k' contains the password as saved
+    # in the files
+
+    k = f_.readlines(0)[0]
+    f_.close()
+
+    
