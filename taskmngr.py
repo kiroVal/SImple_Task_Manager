@@ -20,3 +20,11 @@ f.write(age)
 f.write('\n')
 f.close()
 
+def signup():
+  print("Please enter the username you wish to use for your account: ")
+  username = input("Please enter your username here: ")
+  password = input("Enter password: ")
+  user_information(username, password)
+  print("Proceed to login")
+  login()
+
