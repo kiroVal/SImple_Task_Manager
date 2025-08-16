@@ -66,5 +66,10 @@ def login():
     except Exception as e:
       print(e)
       login()
-    
+
+def view_data(username):
+  ff = open(username, 'r')
+  print(ff.read())
+  ff.close()
+
     
