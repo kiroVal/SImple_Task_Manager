@@ -69,7 +69,31 @@ def login():
 
 def view_data(username):
   ff = open(username, 'r')
-  print(ff.read())
-  ff.close()
+print(ff.read())
+ff.close()
 
+def task_information(username):
+  print("Enter the no. of task you want to add: ")
+j = int(input())
+f1 = open(username, 'a')
+
+for i in range(1, j+1):
+  task = input("Enter the task: ")
+  target = input("Enter the target: ")
+  pp = "Task "+str(i)+' :'
+  qq = "Target "+str(i)+" :"
+
+  f1.write(pp)
+  f1.write(task)
+  f1.write('\n')
+  f1.write(qq)
+  f1.write(target)
+  f1.write('\n')
+
+  print("Press the spacebar if you do not wish to continue")
+  s = input()
+  if s == ' ':
+    break
+  f1.close()
     
+
