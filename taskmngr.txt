@@ -5,7 +5,7 @@ def user_information(Ussnm, Passwd):
     name = input("Enter your name: ")
     address = input("Enter your address: ")
     age = input("Enter your age: ")
-    filename = Ussnm + " Task.txt"
+    filename = Ussnm + "Task.txt"
 
     with open(filename, 'a') as f:
         f.write(Passwd + '\n')
@@ -26,7 +26,7 @@ def signup():
 def login():
     usr_nm = input("Enter your username: ")
     pass_wr = input("Enter password: ") + '\n'
-    filename = usr_nm + " Task.txt"
+    filename = usr_nm + "Task.txt"
 
     try:
         with open(filename, 'r') as f_:
@@ -74,7 +74,7 @@ def task_information(username):
 
 # Function to update task status
 def task_update(username):
-    filename = username + " Task.txt"
+    filename = username + "Task.txt"
     print("Please enter which task is completed: ")
     
     task_completed = input()
@@ -92,7 +92,7 @@ def task_update(username):
 
 # Function to view task updates
 def task_update_viewer(username):
-    filename = username + " Task.txt"
+    filename = username + "Task.txt"
     with open(filename, 'r') as o:
         print(o.read())
 
