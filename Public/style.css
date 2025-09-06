@@ -60,3 +60,18 @@ body {
     display: flex;
     gap: 0.5rem;
 }
+
+.task-input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    background-color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.task-input:focus {
+    border-color: #1a1a1a;
+}
