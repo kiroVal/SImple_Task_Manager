@@ -42,3 +42,12 @@ body {
     color: #6b7280;
     font-size: 0.875rem;
 }
+
+.add-task-section {
+    margin-bottom: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    gap: 0.5rem;
+}
