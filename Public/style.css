@@ -51,3 +51,12 @@ body {
     display: flex;
     gap: 0.5rem;
 }
+
+.add-task-section {
+    margin-bottom: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    gap: 0.5rem;
+}
