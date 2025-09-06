@@ -92,3 +92,17 @@ body {
 .add-btn:hover {
     background-color: #374151;
 }
+
+.task-list {
+    min-height: 200px;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.empty-state p {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
