@@ -75,3 +75,20 @@ body {
 .task-input:focus {
     border-color: #1a1a1a;
 }
+
+.add-btn {
+    padding: 0.75rem;
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.add-btn:hover {
+    background-color: #374151;
+}
