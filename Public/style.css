@@ -20,4 +20,25 @@ body {
     padding: 2rem 0;
 }
 
+.container {
+    max-width: 28rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
 
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
