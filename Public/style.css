@@ -156,3 +156,16 @@ body {
     text-decoration: line-through;
     color: #6b7280;
 }
+
+.delete-btn {
+    padding: 0.25rem;
+    background: none;
+    border: none;
+    color: #6b7280;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease;
+    flex-shrink: 0;
+}
