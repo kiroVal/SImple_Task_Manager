@@ -169,3 +169,7 @@ body {
     transition: color 0.2s ease;
     flex-shrink: 0;
 }
+
+.delete-btn:hover {
+    color: #ef4444;
+}
