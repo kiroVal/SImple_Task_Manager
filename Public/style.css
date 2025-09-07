@@ -151,3 +151,8 @@ body {
     color: #1a1a1a;
     transition: all 0.2s ease;
 }
+
+.task-text.completed {
+    text-decoration: line-through;
+    color: #6b7280;
+}
