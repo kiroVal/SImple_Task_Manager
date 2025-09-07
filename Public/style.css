@@ -145,3 +145,9 @@ body {
     border-color: #22c55e;
     color: white;
 }
+
+.task-text {
+    flex: 1;
+    color: #1a1a1a;
+    transition: all 0.2s ease;
+}
