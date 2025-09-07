@@ -139,3 +139,9 @@ body {
 .task-checkbox:hover {
     border-color: #22c55e;
 }
+
+.task-checkbox.checked {
+    background-color: #22c55e;
+    border-color: #22c55e;
+    color: white;
+}
