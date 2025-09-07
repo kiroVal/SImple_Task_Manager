@@ -135,3 +135,7 @@ body {
     transition: all 0.2s ease;
     flex-shrink: 0;
 }
+
+.task-checkbox:hover {
+    border-color: #22c55e;
+}
