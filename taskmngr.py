@@ -23,6 +23,7 @@ def signup():
     login()
 
 # Function to log in an existing user
+# Test Merge Test
 def login():
     usr_nm = input("Enter your username: ")
     pass_wr = input("Enter password: ") + '\n'
